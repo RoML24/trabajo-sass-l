@@ -1,0 +1,605 @@
+@import "variables";
+@import "formulario";
+@import "primera-media-q";
+
+
+    
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 425px) {
+
+
+
+    header {
+
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.5914740896358543) 0%, rgba(66, 180, 34, 1) 50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        font-weight: 600;
+
+
+        background-color: green;
+
+        h1 {
+
+            font-size: 2.2em;
+            font-family: 'Grape Nuts', cursive;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1em;
+            font-weight: 600;
+            text-align: center;
+            margin-left: .5px;
+            margin-right: .5px;
+        }
+
+    }
+
+
+
+
+    .segunda-lista li {
+
+        font: black;
+        font-size: 1em;
+        font-weight: 600;
+        font-family: 'Grape Nuts', cursive;
+
+        text-decoration: none;
+
+        display: inline-block;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: .5px;
+        padding-right: .5px;
+        margin-left: .5px;
+        margin-right: .5px;
+        border: .5px;
+
+    }
+
+
+    .nav-links {
+        display: inline;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .links--inicio {
+        display: flex;
+        color: black;
+        font-size: 1em;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: none;
+        list-style-type: none;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .links--inicio img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .links--frutas {
+
+
+        font-size: 1em;
+        font-weight: 600;
+
+
+    }
+
+
+    .links--verduras {
+
+
+        font-size: 1em;
+        font-weight: 600;
+
+    }
+
+    .links--envasados {
+
+        font-size: 1em;
+        font-weight: 600;
+
+
+    }
+
+
+
+    .div-main-envios {
+        background-image: url(img/envios.jpeg);
+
+
+        font-size: 1em;
+        font-weight: 700;
+        font-family: 'Grape Nuts', cursive;
+
+
+    }
+
+
+    .envios-h3 {
+        font-size: 1em;
+        font-weight: 700;
+        font-family: 'Grape Nuts', cursive;
+
+    }
+
+    .links--envios {
+
+        font-size: 1em;
+        font-weight: 700;
+
+
+    }
+
+    p {
+
+        padding-left: 0px;
+
+
+    }
+
+
+
+    h2 {
+
+        text-align: center;
+    }
+
+
+
+    .div-main-envios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        list-style-type: none;
+
+        form {
+            font-family: 'Grape Nuts', cursive;
+            font-size: 1.5em;
+            font-weight: 600;
+            list-style-type: none;
+
+
+        }
+
+        .envios-h3 {
+            font-size: 2em;
+        }
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+
+    .collapse {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 600px;
+        font-size: 1em;
+        margin-left: 10px;
+
+        list-style: none;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    header {
+
+        background: rgb(151, 247, 62);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.5914740896358543) 0%, rgba(66, 180, 34, 1) 50%);
+
+
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        font-weight: 600;
+
+        .div-header {
+            font-size: 4em;
+            font-family: 'Grape Nuts', cursive;
+            color: rgb(3, 3, 3);
+
+            transition-property: all;
+            transition-duration: 1.2s;
+            transition-delay: 1;
+            transition-timing-function: ease;
+
+            h1 {
+                font-size: 4em;
+                font-family: 'Grape Nuts', cursive;
+                color: rgb(3, 3, 3);
+
+                transition-property: all;
+                transition-duration: 1.2s;
+                transition-delay: 1;
+                transition-timing-function: ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                    color: whitesmoke;
+
+                }
+
+                img {
+                    animation-name: imag;
+                    animation-iteration-count: 1;
+                    animation-duration: 2s;
+                    animation-timing-function: ease;
+                    animation-delay: .5s;
+
+
+                    @keyframes imag {
+                        0% {
+                            transform: translateX(500px);
+                            opacity: 0;
+                        }
+
+                        50% {
+
+                            opacity: .5;
+                        }
+
+                        100% {
+                            transform: translateX(0px);
+                            opacity: 1;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+    nav {
+        background: rgb(126, 123, 219);
+        background: radial-gradient(circle, rgba(126, 123, 219, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+        height: 75px;
+
+        .collapse {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            font-family: 'Grape Nuts', cursive;
+            font-weight: 600px;
+            font-size: 1em;
+            margin-left: 10px;
+
+            list-style: none;
+        }
+
+
+    }
+
+    h2 {
+        display: flex;
+        font-size: 1.8em;
+        margin-right: 8px;
+    }
+
+    .segunda-lista li {
+        display: inline;
+        flex-direction: row;
+
+
+        font-size: 1.3em;
+        font-weight: 700;
+        color: whitesmoke;
+        padding: left 15px;
+        padding: right 15px;
+        margin-right: 10px;
+        margin-left: 5px;
+
+
+    }
+
+    .links--inicio {
+
+
+        font-size: 2em;
+        font-weight: 600;
+        margin: 2px;
+        padding: 2px;
+
+        img {
+            width: 75px;
+            height: 75px;
+        }
+
+
+    }
+
+    .links--frutas {
+
+
+        font-size: 2em;
+        font-weight: 600;
+
+
+    }
+
+
+    .links--verduras {
+
+
+        font-size: 2em;
+        font-weight: 600;
+
+
+    }
+
+    .links--envasados {
+
+        font-size: 2em;
+        font-weight: 600;
+
+
+    }
+
+
+    .envios-h3 {
+
+        font-size: 1.8em;
+        font-weight: 700;
+        text-align: left;
+
+
+    }
+
+
+    .links--envios {
+
+
+        font-size: 2em;
+        font-weight: 700;
+
+
+
+    }
+
+    h4 {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Grape Nuts', cursive;
+        font-size: 2em;
+        font-weight: 700;
+        text-align: justify;
+        padding-top: 20px;
+    }
+
+    /*html-index*/
+
+    .principal-ind {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        width: 1200px;
+        height: 800px;
+
+        background-image: url(img/comercio.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+
+        font-family: 'Grape Nuts', cursive;
+        color: white;
+        font-size: 1.8em;
+        font-weight: 700;
+        padding: 15px;
+    }
+
+    /*html-frutas*/
+    .frutas {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Grape Nuts', cursive;
+        font-size: 1.4em;
+        font-weight: 700;
+        padding: 15px;
+    }
+
+    .verduras {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        background: rgb(66, 180, 34);
+        background: linear-gradient(90deg, rgba(66, 180, 34, 1) 0%, rgba(27, 5, 5, 1) 100%);
+
+
+        font-family: 'Grape Nuts', cursive;
+        color: white;
+        font-size: 1.3em;
+        font-weight: 700;
+        padding: 15px;
+
+        .verd-baby {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            font-family: 'Grape Nuts', cursive;
+            font-size: 1.4em;
+            font-weight: 700;
+            padding: 15px;
+        }
+
+
+        .verd-papines {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            background: rgb(66, 180, 34);
+            background: linear-gradient(90deg, rgba(66, 180, 34, 1) 0%, rgba(27, 5, 5, 1) 100%);
+
+            font-family: 'Grape Nuts', cursive;
+            color: white;
+            font-size: 1.4em;
+            font-weight: 700;
+            padding: 35px;
+        }
+    }
+
+    p {
+        font-size: 1.1em;
+        font-weight: 700;
+        padding-left: 25px;
+    }
+
+    .carousel-inner {
+
+
+        background: rgb(212, 214, 221);
+        background: linear-gradient(90deg, rgba(33, 50, 246, 1) 1%, rgba(242, 249, 249, 1) 50%, rgb(98, 98, 240) 99%);
+        border-style: solid;
+        border: width 3em;
+        color: black;
+
+
+        max-height: 660px;
+        margin: auto;
+        max-height: 450px;
+        max-width: 650px;
+
+
+        img {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            max-width: 400px;
+            max-height: 400px;
+
+        }
+
+    }
+
+    /*envasados*/
+
+    .envasados {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Grape Nuts', cursive;
+        font-size: 1.4em;
+        font-weight: 700;
+        padding: 15px;
+
+        p {
+            font-size: 1.1em;
+            font-weight: 700;
+            padding-left: 25px;
+        }
+    }
+
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        background: rgb(0, 0, 0);
+        background: linear-gradient(45deg, rgba(0, 0, 0, 1) 41%, rgba(34, 49, 180, 1) 100%);
+        max-height: 100px;
+
+        color: whitesmoke;
+        padding: 55px;
+
+        .redes {
+
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 15px;
+
+
+
+            .circulo {
+                width: 50px;
+                height: 50px;
+                padding: 8px;
+                border-radius: 150px;
+
+                transition-property: all;
+                transition-duration: 1.2s;
+                transition-delay: 1;
+                transition-timing-function: ease;
+            }
+
+            .circulo:hover {
+                transform: scale(1.5);
+            }
+
+            .circulo-w {
+                width: 50px;
+                height: 50px;
+                padding: 8px;
+                border-radius: 150px;
+
+                transition-property: all;
+                transition-duration: 1.2s;
+                transition-delay: 1;
+                transition-timing-function: ease;
+            }
+
+            .circulo-w:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        background-color: rgb(214, 214, 174);
+    }
+}

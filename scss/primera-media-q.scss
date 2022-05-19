@@ -1,0 +1,286 @@
+/* Contenedor padre del grid*/
+.div-contenedor {
+
+    display: grid;
+    grid-template-areas: "header"
+        "nav "
+        "main"
+        "footer";
+
+
+    .div-header {
+        grid-area: header;
+
+    }
+
+    .div-nav {
+        grid-area: nav;
+    }
+
+    .div-main {
+        grid-area: main;
+
+    }
+
+
+    .div-footer {
+        grid-area: footer;
+    }
+}
+
+header {
+
+    background: rgb(38, 242, 15);
+    background: linear-gradient(180deg, rgba(38, 242, 15, 1) 41%, rgba(255, 255, 255, 0.927608543417367) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    font-weight: 600;
+
+    background-color: green;
+
+    h1 {
+
+        font-size: 1.7em;
+        font-family: 'Grape Nuts', cursive;
+        font-weight: 650px;
+    }
+
+    h2 {
+
+        font-size: 1em;
+        font-weight: 600px;
+        text-align: center;
+        margin-left: .5px;
+        margin-right: .5px;
+    }
+
+}
+
+.collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-family: 'Grape Nuts', cursive;
+    font-weight: 600px;
+    font-size: 1em;
+    margin-left: 5px;
+
+    list-style: none;
+}
+
+.segunda-lista li {
+
+    font: black;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Grape Nuts', cursive;
+
+    text-decoration: none;
+
+    display: inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: .5px;
+    padding-right: .5px;
+    margin-left: .5px;
+    margin-right: .5px;
+    border: .5px;
+
+    img {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+
+}
+
+.main-ind {
+    background-image: url(img/comercio.jpeg);
+    font-weight: 500;
+    color: yellow;
+}
+
+
+
+
+.links--inicio img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.links--frutas {
+
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: none;
+    list-style-type: none;
+    margin: 3px;
+    padding: 6px;
+}
+
+
+.links--verduras {
+
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 3px;
+    padding: 6px;
+}
+
+.links--envasados {
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 3px;
+    padding: 6px;
+}
+
+.envios {
+    background-image: url(img/envios.jpeg);
+    background-attachment: fixed;
+    background-size: contain;
+
+
+
+    font: black;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Grape Nuts', cursive;
+
+
+    list-style-type: none;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+.envios-h3 {
+    font: black;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Grape Nuts', cursive;
+
+}
+
+.links--envios {
+    display: flex;
+    color: black;
+    font-size: 1em;
+    font-weight: 700;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 3px;
+    padding: 6px;
+
+}
+
+p {
+
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
+
+    padding-left: 15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 650px;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    margin: auto;
+
+    background-color: burlywood;
+    border-style: solid;
+    border: width 3em;
+    color: black;
+
+
+    max-height: 260px;
+
+
+    img {
+        margin: auto;
+        max-height: 250px;
+        max-width: 350px;
+
+    }
+
+}
+
+h2 {
+
+    font-size: 1em;
+    font-family: 'Grape Nuts', cursive;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 41%, rgba(34, 49, 180, 1) 100%);
+    max-height: 180px;
+
+    color: whitesmoke;
+    padding: 55px;
+
+
+    .redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+    
+        .circulo {
+            width: 25px;
+            height: 25px;
+            padding-right: 5px;
+        }
+    
+        .circulo-w {
+            width: 32px;
+            height: 25px;
+            padding-left: 5px;
+        }
+    
+        .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-right: 10px;
+    
+            font-family: 'Grape Nuts', cursive;
+            list-style-type: none;
+        }
+    
+    }
+
+}
+
